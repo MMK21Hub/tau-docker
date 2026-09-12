@@ -1,4 +1,4 @@
-<0;50;7Mservices:
+services:
   immich-server:
     container_name: immich_server
     image: ghcr.io/immich-app/immich-server:v3.1.0
