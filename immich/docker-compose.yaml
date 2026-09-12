@@ -1,7 +1,7 @@
 services:
   immich-server:
     container_name: immich_server
-    image: ghcr.io/immich-app/immich-server:v3.1.0
+    image: ghcr.io/immich-app/immich-server:v3.2.0
     volumes:
       - ${UPLOAD_LOCATION}:/usr/src/app/upload
       - /etc/localtime:/etc/localtime:ro
@@ -17,7 +17,7 @@ services:
 
   immich-machine-learning:
     container_name: immich_machine_learning
-    image: ghcr.io/immich-app/immich-machine-learning:v3.1.0-openvino
+    image: ghcr.io/immich-app/immich-machine-learning:v3.2.0-openvino
     volumes:
       - /data/immich/model-cache:/cache
       - /dev/bus/usb:/dev/bus/usb # OpenVINO
@@ -35,7 +35,6 @@ services:
     container_name: immich_redis
     image: redis:6.2-alpine@sha256:b6124ab2e45cc332e16398022a411d7e37181f21ff7874835e0180f56a09e82a
     restart: unless-stopped
-
 
   database:
     container_name: immich_postgres
