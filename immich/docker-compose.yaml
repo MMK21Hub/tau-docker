@@ -17,7 +17,7 @@ services:
 
   immich-machine-learning:
     container_name: immich_machine_learning
-    image: ghcr.io/immich-app/immich-machine-learning:v3.2.0-openvino
+    image: ghcr.io/immich-app/immich-machine-learning:v3.2.1-openvino
     volumes:
       - /data/immich/model-cache:/cache
       - /dev/bus/usb:/dev/bus/usb # OpenVINO
