@@ -9,3 +9,6 @@ updates:
       immich:
         patterns:
           - "immich-app/*"
+      beszel:
+        patterns:
+          - "henrygd/beszel*"
