@@ -1,0 +1,16 @@
+services:
+  terraria:
+    image: ryshe/terraria:vanilla-1.4.5.8
+    container_name: terraria
+    ports:
+      - "7777:7777"
+    #environment:
+#      WORLDPATH: /root/.local/share/Terraria/Worlds
+    volumes:
+      - /data/terraria/worlds:/root/.local/share/Terraria/Worlds
+      - ./serverconfig.txt:/config/serverconfig.txt
+    command: -password ${SERVER_PASSWORD:?set server password in .env}
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+

@@ -1,0 +1,20 @@
+# world auto-creation
+# large world
+#autocreate=3
+#worldname=Homeless Hasslegravers
+# expert mode
+#difficulty=1
+
+# world (after creation)
+world=/root/.local/share/Terraria/Worlds/Homeless_Hasslegravers.wld
+
+# other configs
+maxplayers=6
+motd=Server? I hardly know 'er!
+worldpath=/root/.local/share/Terraria/Worlds
+worldrollbackstokeep=6
+upnp=0
+
+# performance tuning if needed:
+#slowliquids=1
+#npcstream=60
