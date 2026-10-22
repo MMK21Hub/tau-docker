@@ -1,10 +1,14 @@
 version: 2
 updates:
   - package-ecosystem: "docker-compose"
-    directories: 
+    directories:
       - "/*"
     schedule:
       interval: "daily"
+    open-pull-requests-limit: 8
+    ignore:
+      - dependency-name: "postgres"
+        update-types: ["version-update:semver-major"]
     groups:
       immich:
         patterns:
@@ -12,3 +16,6 @@ updates:
       beszel:
         patterns:
           - "henrygd/beszel*"
+      victoria_metrics:
+        patterns:
+          - "victoriametrics/*"
