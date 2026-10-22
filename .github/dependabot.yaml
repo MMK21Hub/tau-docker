@@ -19,3 +19,6 @@ updates:
       victoria_metrics:
         patterns:
           - "victoriametrics/*"
+      scanopy:
+        patterns:
+          - "ghcr.io/scanopy/scanopy/*"
