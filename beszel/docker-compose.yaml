@@ -1,7 +1,7 @@
 services:
   beszel:
     container_name: beszel
-    image: henrygd/beszel:0.21.0
+    image: henrygd/beszel:0.21.1
     user: 1000:1000
     restart: unless-stopped
     environment:
@@ -18,7 +18,7 @@ services:
       timeout: 5s
       
   beszel-agent:
-    image: henrygd/beszel-agent:0.21.0
+    image: henrygd/beszel-agent:0.21.1
     container_name: beszel-agent
     restart: unless-stopped
     network_mode: host
