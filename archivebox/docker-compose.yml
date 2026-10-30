@@ -13,7 +13,7 @@
 
 services:
   archivebox:
-    image: archivebox/archivebox:0.9.73
+    image: archivebox/archivebox:0.9.76
     restart: unless-stopped
     ports:
         - "5797:5797"
